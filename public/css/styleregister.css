@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:wght@300&display=swap');
+
+
+*{ 
+    font-family: 'Roboto', sans-serif;
+    font-size : 12px; 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    body{background-color:#EAC926;};
+
+    /*header*/
+
+.logo-ml{
+    width: 47%;
+}
+.navbar{
+    display: none;
+    margin-bottom: 10px;
+ }
+li{
+    margin-left: 4px;
+}
+.busqueda{
+
+    width: 47%;
+}
+.compracuotas{
+    text-align: center;
+}
+.burger-menu button{
+    background-color: #1259c3;;
+    width: 30px;
+    height: 25px;
+    border-radius: 5px;
+}
+.burger-menu{
+   text-align: center;
+   display: block;
+}
+
+.burger-menu button i{
+    color: white;
+}
+
+
+
+.fa-solid fa-credit-card{font-size: 2em;}
+
+#main-header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.logo-ml{
+    width: 47%;
+}
+.busqueda{
+width: 47%;
+}
+.text-der{
+    justify-content: space-between;
+    position: relative;
+    left: 60%;
+    display: inline-flex;
+    text-align: left;
+    list-style: none;
+    text-decoration: none;
+
+}
+.text-izq{
+    justify-content: space-between;
+    display:inline-flex;
+    text-align: right;
+    list-style: none;
+    text-decoration: none;
+
+}
+/*main*/
+
+main{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+    background-color: #ebebee;
+}
+.boton{
+    border-radius: 7px;
+    background-color: #1259c3;
+    width: 60px;
+    transition: all 5sg;
+}
+.boton:hover{
+    background-color: #0022AA;
+
+}
+.formulario{
+    text-align: center;
+    width: 30%;
+    height: 30px;
+    border-radius: 7px;
+}
+/*footer*/
+footer{
+    text-align: center;
+    margin-top: 15px;
+    background-color: white;
+}
+
+.icon-footer i{
+font-size: 2em;
+margin-bottom: 10px;
+color: #1259c3;
+
+ }
+
+@media(min-width:361px){
+  
+    .burger-menu{
+        display: none;
+    }
+    .navbar{
+       display: block;
+    }
+    .logo-ml{
+        width: 47%;
+    }
+    .busqueda{
+     
+        width: 47%;
+    }
+    .compracuotas{
+        width: 100%;
+    }
+}
+
+  @media (min-width: 769px) {
+   
+    .busqueda{
+        width: 31%;
+    }
+    .logo-ml{
+        width: 31%;
+    }
+    .compracuotas{
+        width: 31%;
+    }
+  }
+  
