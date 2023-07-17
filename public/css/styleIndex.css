@@ -54,9 +54,10 @@ li{
 
 .fa-solid fa-credit-card{font-size: 2em;}
 .text-der{
+    width: 30%;
     justify-content: space-between;
     position: relative;
-    left: 60%;
+    left: 30%;
     display: inline-flex;
     text-align: left;
     list-style: none;
@@ -64,6 +65,7 @@ li{
 
 }
 .text-izq{
+    width: 30%;
     justify-content: space-between;
     display:inline-flex;
     text-align: right;
@@ -97,13 +99,13 @@ main{
         .nav imput{
             width: 100%;
         }
-    .articulo{
+    .caja-productos{
         border: 1px solid #ebebeb;
          align-items: center;
        background-color: #ebebeb;
        margin-top: 10px;
     }
-    .articulo:hover {
+    .caja-productos:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .caja{ 
@@ -122,7 +124,7 @@ main{
     .imagenes-productos{
         width: 100%;
     }
-    .truck {
+    .icon-truck {
         color: #39b54a;
         display: block;
         font-size: 16px;
@@ -138,7 +140,7 @@ main{
         transition: all 1.5s;
     }
     
-    .truck:hover {
+    .icon-truck:hover {
         transform: rotate(-90deg);
     }
 
@@ -176,8 +178,8 @@ main{
     flex-direction: column;
 }
 
-.articulo:hover .descripciones{
-    display: block;
+.caja-productos:hover .descripciones{
+    display: flex;
 }
 
 
@@ -185,19 +187,15 @@ main{
 /*footer*/
 footer{
     text-align: center;
-    margin-top: 60px;
+    margin-top: 15px;
+    background-color: white;
 }
 
 .icon-footer i{
-    width: 31%;
 font-size: 2em;
 margin-bottom: 10px;
 color: #1259c3;
- }
 
- .footer-section{
-    display: flex;
-    flex-wrap: wrap;
  }
 
 
@@ -214,18 +212,15 @@ color: #1259c3;
     width: 47%;
 }
  @media(min-width:361px){
-    .descripciones{
-     display: flex !important;
-    }
-    .articulo{
+    .caja-productos{
         width: 48%;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .burger-menu{
         display: none;
     }
     .navbar{
        display: block;
+       width: 100%;
     }
     .logo-ml{
         width: 47%;
@@ -237,20 +232,29 @@ color: #1259c3;
     .compracuotas{
         width: 100%;
     }
+    
 }
 
   @media (min-width: 769px) {
-    .articulo {
+    .caja-productos {
       width: 23%;
     }
     .busqueda{
+        margin: auto;
         width: 31%;
+        
+    }
+    .barra-busqueda{
+        height: 30%;
+        width: 60%;
+    text-align: center;
+        
     }
     .logo-ml{
         width: 31%;
     }
     .compracuotas{
         width: 31%;
+        margin: auto
     }
-  }
-  
+}
