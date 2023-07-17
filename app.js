@@ -23,5 +23,5 @@ app.get('/register', (req, res) => {
 });
 
 app.listen(process.env.PORT, () => {
-    console.log('server con puerto' + process.env.PORT+ 'andando');
+    console.log('server con puerto' + process.env.PORT + 'andando');
 });
