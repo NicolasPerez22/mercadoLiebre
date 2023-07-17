@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const dotenv= require('dovent').config();
+const dovent= require('dovent').config();
 const app = express();
 
 const rutaPublic = path.join(__dirname, './public');
