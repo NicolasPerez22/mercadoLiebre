@@ -103,6 +103,9 @@ main{
        background-color: #ebebeb;
        margin-top: 10px;
     }
+    .articulo:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     .caja{ 
         position: relative;
         display: block;
@@ -119,25 +122,25 @@ main{
     .imagenes-productos{
         width: 100%;
     }
-    .truck{
+    .truck {
         color: #39b54a;
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #fff;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-    transition: all 2seg;
-    
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        top: -15px;
+        transition: all 1.5s;
     }
-    .truck:hover{
-        transform: rotateY(90deg);
-      }
+    
+    .truck:hover {
+        transform: rotate(-90deg);
+    }
 
     .info{
         padding: 15px;
@@ -173,7 +176,7 @@ main{
     flex-direction: column;
 }
 
-.article:hover .descripciones{
+.articulo:hover .descripciones{
     display: block;
 }
 
@@ -186,11 +189,15 @@ footer{
 }
 
 .icon-footer i{
-    
+    width: 31%;
 font-size: 2em;
 margin-bottom: 10px;
 color: #1259c3;
-display: inline-flex;
+ }
+
+ .footer-section{
+    display: flex;
+    flex-wrap: wrap;
  }
 
 
